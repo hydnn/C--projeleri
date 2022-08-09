@@ -1,0 +1,33 @@
+ internal class Shape
+    {
+        public void Daire()
+        {
+            Console.Write("Yarıçap bilgisi gir : ");
+            double r = double.Parse(Console.ReadLine());
+            double alan = Math.PI * r * r;
+            Console.WriteLine(alan);        
+        }
+        public void Ucgen()
+        {
+            Console.Write("Kenar bilgisi gir : ");
+            int kenar = int.Parse(Console.ReadLine());
+            double alan = (kenar * kenar * Math.Sqrt(3)) / 4;
+            Console.WriteLine(alan);
+        }
+        public void Dikdortgen()
+        {
+            Console.Write("1.Kenar bilgisi gir : ");
+            int kenar1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("2.Kenar bilgisi gir : ");
+            int kenar2 = int.Parse(Console.ReadLine());
+            int alan = kenar1 * kenar2;
+            Console.WriteLine(alan);
+        }
+        public void Kare()
+        {
+            Console.Write("Kenar bilgisi gir : ");
+            int kenar = int.Parse(Console.ReadLine());
+            int alan = kenar * kenar;
+            Console.WriteLine(alan);
+        }
+    }
